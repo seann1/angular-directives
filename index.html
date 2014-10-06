@@ -19,11 +19,19 @@
           </li>
         </ul>
       </div>
+      <h2>Hobby List</h2>
+      <ul>
+        <li ng-repeat="item in hobbies">
+          {{item.hobby}}
+        </li>
+      </ul>
+    </div>
       <div class="col-md-4">
         <h2>New Student</h2>
         <form ng-submit="addStudent()" class="form-inline" role="form">
           <div class="form-group">
             <input type="text" ng-model="studentName" class="form-control" id="student-name" placeholder="Enter name">
+            <input type="text" ng-model="studentHobby" class="form-control" id="student-hobby" placeholder="Enter hobby">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
